@@ -1,17 +1,24 @@
-import { useState } from 'react'
-import './App.css'
-import Welcome from './components/Welcome'
+import { useState, useContext } from 'react'
+import { Link, useParams, useNavigate, Routes, Route } from "react-router-dom"
 
-function App() {
+import './App.css'
+// import Welcome from './components/Welcome'
+import Header from './components/App/Header'
+import Main from './components/App/Main'
+import Footer from './components/App/Footer'
+
+
+
+export default function App() {
  
 
   return (
-    <>
-      <div className="App">
-      <Welcome/>
-      </div>
-    </>
+    
+    <div className="App">
+      <Header />
+      <Main />
+      <Footer />
+    </div>
+    
   )
 }
-
-export default App
